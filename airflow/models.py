@@ -66,7 +66,7 @@ from urllib.parse import urlparse, quote, parse_qsl, unquote
 
 from sqlalchemy import (
     Boolean, Column, DateTime, Float, ForeignKey, ForeignKeyConstraint, Index,
-    Integer, LargeBinary, PickleType, String, Text, UniqueConstraint, MetaData,
+    Integer, PickleType, String, Text, UniqueConstraint, MetaData,
     and_, asc, func, or_, true as sqltrue
 )
 from sqlalchemy.ext.declarative import declarative_base, declared_attr
@@ -98,7 +98,7 @@ from airflow.utils.db import provide_session
 from airflow.utils.decorators import apply_defaults
 from airflow.utils.email import send_email
 from airflow.utils.helpers import (
-    as_tuple, is_container, validate_key, pprinttable)
+    is_container, validate_key, pprinttable)
 from airflow.utils.operator_resources import Resources
 from airflow.utils.state import State
 from airflow.utils.sqlalchemy import UtcDateTime
